@@ -7,7 +7,7 @@ DEPS = Makefile.depend
 
 INCLUDES = -I./include
 CXXFLAGS = -std=c++11 -Werror -Wall $(INCLUDES)
-LDFLAGS = -lpthread 
+LDFLAGS = -lpthread -framework AudioToolbox -framework CoreFoundation
 
 
 all: $(TARGET)
